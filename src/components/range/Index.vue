@@ -7,8 +7,6 @@
   <input
     @input="$emit('update:modelValue', +($event.target as HTMLInputElement).value)"
     type="range"
-    min="0"
-    max="100"
     :value="modelValue"
     :class="M.range"
     :style="`--v: ${modelValue}`"

@@ -15,7 +15,7 @@
   
     <div :class="M.content">
       <Smoke :power="range" :start="range" />
-      <Range v-model="range" />
+      <Range v-model="range" min="0" max="100" />
       <div :class="M.label">Range of power</div>
     </div>
   
